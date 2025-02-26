@@ -1,0 +1,16 @@
+[package]
+name = "inter-services-communication"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "helloworld-server"
+path = "src/server.rs"
+
+[[bin]]
+name = "helloworld-client"
+path = "src/client.rs"
+
+[dependencies]
+tonic = "0.12.3"
+
